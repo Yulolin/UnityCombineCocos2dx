@@ -1,0 +1,6 @@
+*.DS_Store
+build/*
+projects/Android/obj/*
+projects/Android_es2/obj/*
+projects/Xcode/RenderingPlugin.xcodeproj/project.xcworkspace/xcuserdata
+projects/Xcode/RenderingPlugin.xcodeproj/xcuserdata

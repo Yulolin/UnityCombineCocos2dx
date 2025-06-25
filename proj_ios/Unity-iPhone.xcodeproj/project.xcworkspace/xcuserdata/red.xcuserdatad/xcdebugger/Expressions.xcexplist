@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "crp::sendTouchToCocos_Begin:Cocos2dxPlugin_m.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "[TouchCacheManager sharedManager]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "crp::sendTouchBackToUnity:Cocos2dxPlugin_m.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "[TouchCacheManager sharedManager]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UnityView(iOS) touchesBegan:withEvent:]:UnityView+iOS.mm">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

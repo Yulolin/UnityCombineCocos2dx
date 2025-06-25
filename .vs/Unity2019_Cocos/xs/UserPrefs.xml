@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{6AF44D1F-8348-585C-E79E-28370C651E33}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Cocos2dxPlugin.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Cocos2dxPlugin.cs" Line="199" Column="56" />
+      <File FileName="Assets/Scripts/UnityTest.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Unity2019_Cocos" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Cocos2dxPlugin.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c40d55a7-4797-4219-92a0-47a9e1ddb718" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
