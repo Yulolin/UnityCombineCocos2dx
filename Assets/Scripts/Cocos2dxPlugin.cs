@@ -68,14 +68,14 @@ public class Cocos2dxPlugin : MonoBehaviour
 
         _Cocos2dxRenderer_JavaClass = new AndroidJavaClass("org.cocos2dx.lib.Cocos2dxRenderer");
 
-#elif PLATFORM_IOS && !UNITY_EDITOR
+#elif PLATFORM_IOS 
         CocosEngine_Start(Screen.width, Screen.height);
 #endif
     }
 
 #region iOS Native函数
 
-#if (PLATFORM_IOS || PLATFORM_TVOS || PLATFORM_BRATWURST || PLATFORM_SWITCH) && !UNITY_EDITOR
+#if (PLATFORM_IOS || PLATFORM_TVOS || PLATFORM_BRATWURST || PLATFORM_SWITCH) 
     [DllImport("__Internal")]
     private static extern IntPtr GetRenderEventFunc();
 
@@ -87,7 +87,7 @@ public class Cocos2dxPlugin : MonoBehaviour
 
 #region Android Native函数
 
-#if PLATFORM_ANDROID && !UNITY_EDITOR
+#if PLATFORM_ANDROID 
     const string _cocosGameLibName = "MyGame";
 
     private AndroidJavaClass _Cocos2dxRenderer_JavaClass = null;
