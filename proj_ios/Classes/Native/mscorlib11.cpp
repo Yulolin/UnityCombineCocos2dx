@@ -33145,16 +33145,6 @@ IL2CPP_EXTERN_C  String_t* Single_ToString_mCF682C2751EC9B98F1CE5455066B92D7D335
 	float* _thisAdjusted = reinterpret_cast<float*>(__this + _offset);
 	return Single_ToString_mCF682C2751EC9B98F1CE5455066B92D7D3356756(_thisAdjusted, ___format0, ___provider1, method);
 }
-// System.Single System.Single::Parse(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Single_Parse_m643ECE18CB0499B2B3EC76C8B941020122003DC6 (String_t* ___s0, const RuntimeMethod* method)
-{
-	{
-		String_t* L_0 = ___s0;
-		NumberFormatInfo_tFDF57037EBC5BC833D0A53EF0327B805994860A8 * L_1 = NumberFormatInfo_get_CurrentInfo_m595DF03E32E0C5B01F1EC45F7264B2BD09BA61C9(/*hidden argument*/NULL);
-		float L_2 = Single_Parse_mAACB78E5DB76B756AA541CE1FD79F915FC66D1D8(L_0, ((int32_t)231), L_1, /*hidden argument*/NULL);
-		return L_2;
-	}
-}
 // System.Single System.Single::Parse(System.String,System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Single_Parse_m341EA42F7782B136FA7335771DA3C6C96AF6BD86 (String_t* ___s0, RuntimeObject* ___provider1, const RuntimeMethod* method)
 {

@@ -56,14 +56,13 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_netstandardCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_TextCoreModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UICodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_TextMeshProCodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AndroidJNIModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AudioModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_GameCenterModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_ParticleSystemModuleCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngineCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 extern const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[27] = 
+const Il2CppCodeGenModule* g_CodeGenModules[26] = 
 {
 	(&g_mscorlibCodeGenModule),
 	(&g_System_ConfigurationCodeGenModule),
@@ -86,7 +85,6 @@ const Il2CppCodeGenModule* g_CodeGenModules[27] =
 	(&g_UnityEngine_TextCoreModuleCodeGenModule),
 	(&g_UnityEngine_UICodeGenModule),
 	(&g_Unity_TextMeshProCodeGenModule),
-	(&g_UnityEngine_AndroidJNIModuleCodeGenModule),
 	(&g_UnityEngine_AudioModuleCodeGenModule),
 	(&g_UnityEngine_GameCenterModuleCodeGenModule),
 	(&g_UnityEngine_ParticleSystemModuleCodeGenModule),
@@ -98,20 +96,20 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	1,
 	g_ReversePInvokeWrapperPointers,
-	7007,
+	6908,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	2550,
+	2509,
 	g_Il2CppInvokerPointers,
-	3621,
+	3544,
 	g_AttributeGenerators,
 	302,
 	g_UnresolvedVirtualMethodPointers,
-	184,
+	182,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	27,
+	26,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

@@ -794,6 +794,8 @@ IL2CPP_EXTERN_C RuntimeClass* PlayableBindingU5BU5D_t7EB322901D51EAB67BA4F711C87
 IL2CPP_EXTERN_C RuntimeClass* PlayableBinding_t4D92F4CF16B8608DD83947E5D40CB7690F23F9C8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PlayableGraph_tEC38BBCA59BDD496F75037F220984D41339AB8BA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PlayableHandle_t9D3B4E540D4413CED81DDD6A24C5373BEFA1D182_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Playable_t4ABB910C374FCAB6B926DA4D34A85857A59950D0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PlayerConnectionInternal_t4C39607D5FA0CC6DA7B22446F2542811F3EBAC43_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PlayerConnection_tFC3A80EAE06A41E9D3879144C86D87DE99EC56EA_il2cpp_TypeInfo_var;
@@ -1158,7 +1160,6 @@ IL2CPP_EXTERN_C const uint32_t Material__ctor_m0171C6D4D3FD04D58C70808F255DBA67D
 IL2CPP_EXTERN_C const uint32_t Material__ctor_m02F4232D67F46B1EE84441089306E867B1788924_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Material__ctor_m81E76B5C1316004F25D4FE9CEC0E78A7428DABA8_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Material_get_mainTexture_mE85CF647728AD145D7E03A172EFD5930773E514E_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Material_set_mainTexture_m0742CFF768E9701618DA07C71F009239AB31EB41_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Mathf_Abs_mC7DD2FB3789B5409055836D0E7D8227AD2099FDC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Mathf_Abs_mD852D98E3D4846B45F57D0AD4A8C6E00EF272662_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Mathf_Approximately_m91AF00403E0D2DEA1AAE68601AD218CFAD70DF7E_MetadataUsageId;
@@ -1266,6 +1267,8 @@ IL2CPP_EXTERN_C const uint32_t PlayableHandle_IsValid_mDA0A998EA6E2442C5F3B6CDFA
 IL2CPP_EXTERN_C const uint32_t PlayableHandle__cctor_m6FA486FD9ECB91B10F04E59EFE993EC7663B6EA3_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t PlayableHandle_get_Null_m09DE585EF795EFA2811950173C80F4FA24CBAAD1_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t PlayableHandle_op_Equality_mBA774AE123AF794A1EB55148206CDD52DAFA42DF_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t PlayableOutput_Equals_m458689DD056559A7460CCE496BF6BEC45EB47C5B_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t PlayableOutput__cctor_m833F06DD46347C62096CEF4E22DBC3EB9ECDACD5_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Playable_Equals_m1EC7E8B579C862BA8C979BD616224EC1B3364DD1_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Playable__cctor_m5655D443F6D04230DB5D37BF7D5EDCA71FD85A32_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Playable_get_Null_m1641F4B851ACAA6CBCC9BB400EC783EDEAF1A48D_MetadataUsageId;
@@ -7175,24 +7178,6 @@ public:
 };
 
 
-// UnityEngine.FilterMode
-struct FilterMode_t6590B4B0BAE2BBBCABA8E1E93FA07A052B3261AF 
-{
-public:
-	// System.Int32 UnityEngine.FilterMode::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(FilterMode_t6590B4B0BAE2BBBCABA8E1E93FA07A052B3261AF, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-
 // UnityEngine.Gradient
 struct Gradient_t35A694DDA1066524440E325E582B01E33DE66A3A  : public RuntimeObject
 {
@@ -12285,10 +12270,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Material_GetFirstPropertyNameIdByAttr
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture_t387FE83BB848001FD06B14707AEA6D5A0F6A95F4 * Material_GetTexture_mDB1B89D76D44AD07BD214224C59A6FE0B62F6477 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___nameID0, const RuntimeMethod* method);
 // UnityEngine.Texture UnityEngine.Material::GetTexture(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture_t387FE83BB848001FD06B14707AEA6D5A0F6A95F4 * Material_GetTexture_mCD6B822EA19773B8D39368FF1A285E7B69043896 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, String_t* ___name0, const RuntimeMethod* method);
-// System.Void UnityEngine.Material::SetTexture(System.Int32,UnityEngine.Texture)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetTexture_m4FFF0B403A64253B83534701104F017840142ACA (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___nameID0, Texture_t387FE83BB848001FD06B14707AEA6D5A0F6A95F4 * ___value1, const RuntimeMethod* method);
-// System.Void UnityEngine.Material::SetTexture(System.String,UnityEngine.Texture)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetTexture_mAA0F00FACFE40CFE4BE28A11162E5EEFCC5F5A61 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, String_t* ___name0, Texture_t387FE83BB848001FD06B14707AEA6D5A0F6A95F4 * ___value1, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Shader::PropertyToID(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Shader_PropertyToID_m831E5B48743620DB9E3E3DD15A8DEA483981DD45 (String_t* ___name0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Material::HasProperty(System.Int32)
@@ -12804,6 +12785,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableHandle_IsValid_mDA0A998EA6E2442C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t * PlayableHandle_GetPlayableType_Injected_m65C3EB2DEC74C0A02707B6A61D25B3BFEC91DB66 (PlayableHandle_t9D3B4E540D4413CED81DDD6A24C5373BEFA1D182 * ____unity_self0, const RuntimeMethod* method);
 // System.Type UnityEngine.Playables.PlayableHandle::GetPlayableType()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t * PlayableHandle_GetPlayableType_m962BE384C093FF07EAF156DA373806C2D6EF1AD1 (PlayableHandle_t9D3B4E540D4413CED81DDD6A24C5373BEFA1D182 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Playables.PlayableOutput::.ctor(UnityEngine.Playables.PlayableOutputHandle)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableOutput__ctor_m881EC9E4BAD358971373EE1D6BF9C37DDB7A4943 (PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 * __this, PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  ___handle0, const RuntimeMethod* method);
+// UnityEngine.Playables.PlayableOutputHandle UnityEngine.Playables.PlayableOutput::GetHandle()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  PlayableOutput_GetHandle_m079ADC0139E95AA914CD7502F27EC79BB1A876F3 (PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 * __this, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Playables.PlayableOutputHandle::op_Equality(UnityEngine.Playables.PlayableOutputHandle,UnityEngine.Playables.PlayableOutputHandle)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableOutputHandle_op_Equality_m9917DCF55902BB4984B830C4E3955F9C4E4CE0C0 (PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  ___lhs0, PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  ___rhs1, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Playables.PlayableOutput::Equals(UnityEngine.Playables.PlayableOutput)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableOutput_Equals_m458689DD056559A7460CCE496BF6BEC45EB47C5B (PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 * __this, PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345  ___other0, const RuntimeMethod* method);
+// UnityEngine.Playables.PlayableOutputHandle UnityEngine.Playables.PlayableOutputHandle::get_Null()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  PlayableOutputHandle_get_Null_mA462EF24F3B0CDD5B3C3F0C57073D49CED316FA4 (const RuntimeMethod* method);
 // System.Void System.ThrowHelper::ThrowArgumentOutOfRangeException()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowHelper_ThrowArgumentOutOfRangeException_mBA2AF20A35144E0C43CD721A22EAC9FCA15D6550 (const RuntimeMethod* method);
 #ifdef __clang__
@@ -25163,14 +25154,6 @@ IL2CPP_EXTERN_C void FailedToLoadScriptObject_tB9D2DBB36BA1E86F2A7392AF112B45520
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 // System.Void UnityEngine.GL::GLIssuePluginEvent(System.IntPtr,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GL_GLIssuePluginEvent_m4ED7828307FFBCBBC0E208FA24D51741BF3A101D (intptr_t ___callback0, int32_t ___eventID1, const RuntimeMethod* method)
 {
@@ -27162,46 +27145,6 @@ IL_0030:
 		return L_6;
 	}
 }
-// System.Void UnityEngine.Material::set_mainTexture(UnityEngine.Texture)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_mainTexture_m0742CFF768E9701618DA07C71F009239AB31EB41 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, Texture_t387FE83BB848001FD06B14707AEA6D5A0F6A95F4 * ___value0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Material_set_mainTexture_m0742CFF768E9701618DA07C71F009239AB31EB41_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	bool V_1 = false;
-	{
-		int32_t L_0 = Material_GetFirstPropertyNameIdByAttribute_m34991F73A65FE72151842050D18EB3EC8969A8C2(__this, ((int32_t)128), /*hidden argument*/NULL);
-		V_0 = L_0;
-		int32_t L_1 = V_0;
-		V_1 = (bool)((((int32_t)((((int32_t)L_1) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		bool L_2 = V_1;
-		if (!L_2)
-		{
-			goto IL_0023;
-		}
-	}
-	{
-		int32_t L_3 = V_0;
-		Texture_t387FE83BB848001FD06B14707AEA6D5A0F6A95F4 * L_4 = ___value0;
-		Material_SetTexture_m4FFF0B403A64253B83534701104F017840142ACA(__this, L_3, L_4, /*hidden argument*/NULL);
-		goto IL_0030;
-	}
-
-IL_0023:
-	{
-		Texture_t387FE83BB848001FD06B14707AEA6D5A0F6A95F4 * L_5 = ___value0;
-		Material_SetTexture_mAA0F00FACFE40CFE4BE28A11162E5EEFCC5F5A61(__this, _stringLiteralC510EA100EEE1C261FE63B56E1F3390BFB85F481, L_5, /*hidden argument*/NULL);
-	}
-
-IL_0030:
-	{
-		return;
-	}
-}
 // System.Int32 UnityEngine.Material::GetFirstPropertyNameIdByAttribute(UnityEngine.Rendering.ShaderPropertyFlags)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Material_GetFirstPropertyNameIdByAttribute_m34991F73A65FE72151842050D18EB3EC8969A8C2 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, int32_t ___attributeFlag0, const RuntimeMethod* method)
 {
@@ -27477,17 +27420,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetMatrix_m6C552C454B30BA42F597
 		int32_t L_0 = ___nameID0;
 		Matrix4x4_t6BF60F70C9169DF14C9D2577672A44224B236ECA  L_1 = ___value1;
 		Material_SetMatrixImpl_mAC50A1E655FF577F6AEB3C67F14DAE7D1AA60C4B(__this, L_0, L_1, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.Material::SetTexture(System.String,UnityEngine.Texture)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetTexture_mAA0F00FACFE40CFE4BE28A11162E5EEFCC5F5A61 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, String_t* ___name0, Texture_t387FE83BB848001FD06B14707AEA6D5A0F6A95F4 * ___value1, const RuntimeMethod* method)
-{
-	{
-		String_t* L_0 = ___name0;
-		int32_t L_1 = Shader_PropertyToID_m831E5B48743620DB9E3E3DD15A8DEA483981DD45(L_0, /*hidden argument*/NULL);
-		Texture_t387FE83BB848001FD06B14707AEA6D5A0F6A95F4 * L_2 = ___value1;
-		Material_SetTextureImpl_mBCF204C1FAD811B00DBAE98847D6D533EE05B135(__this, L_1, L_2, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -34598,6 +34530,102 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t * PlayableHandle_GetPlayableType_Injec
 	_il2cpp_icall_func = (PlayableHandle_GetPlayableType_Injected_m65C3EB2DEC74C0A02707B6A61D25B3BFEC91DB66_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Playables.PlayableHandle::GetPlayableType_Injected(UnityEngine.Playables.PlayableHandle&)");
 	Type_t * retVal = _il2cpp_icall_func(____unity_self0);
 	return retVal;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Playables.PlayableOutput::.ctor(UnityEngine.Playables.PlayableOutputHandle)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableOutput__ctor_m881EC9E4BAD358971373EE1D6BF9C37DDB7A4943 (PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 * __this, PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  ___handle0, const RuntimeMethod* method)
+{
+	{
+		PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  L_0 = ___handle0;
+		__this->set_m_Handle_0(L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void PlayableOutput__ctor_m881EC9E4BAD358971373EE1D6BF9C37DDB7A4943_AdjustorThunk (RuntimeObject * __this, PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  ___handle0, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 * _thisAdjusted = reinterpret_cast<PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 *>(__this + _offset);
+	PlayableOutput__ctor_m881EC9E4BAD358971373EE1D6BF9C37DDB7A4943(_thisAdjusted, ___handle0, method);
+}
+// UnityEngine.Playables.PlayableOutputHandle UnityEngine.Playables.PlayableOutput::GetHandle()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  PlayableOutput_GetHandle_m079ADC0139E95AA914CD7502F27EC79BB1A876F3 (PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 * __this, const RuntimeMethod* method)
+{
+	PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  L_0 = __this->get_m_Handle_0();
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  PlayableOutput_GetHandle_m079ADC0139E95AA914CD7502F27EC79BB1A876F3_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 * _thisAdjusted = reinterpret_cast<PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 *>(__this + _offset);
+	return PlayableOutput_GetHandle_m079ADC0139E95AA914CD7502F27EC79BB1A876F3(_thisAdjusted, method);
+}
+// System.Boolean UnityEngine.Playables.PlayableOutput::Equals(UnityEngine.Playables.PlayableOutput)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableOutput_Equals_m458689DD056559A7460CCE496BF6BEC45EB47C5B (PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 * __this, PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345  ___other0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayableOutput_Equals_m458689DD056559A7460CCE496BF6BEC45EB47C5B_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  L_0 = PlayableOutput_GetHandle_m079ADC0139E95AA914CD7502F27EC79BB1A876F3((PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 *)__this, /*hidden argument*/NULL);
+		PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  L_1 = PlayableOutput_GetHandle_m079ADC0139E95AA914CD7502F27EC79BB1A876F3((PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 *)(&___other0), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922_il2cpp_TypeInfo_var);
+		bool L_2 = PlayableOutputHandle_op_Equality_m9917DCF55902BB4984B830C4E3955F9C4E4CE0C0(L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		goto IL_0016;
+	}
+
+IL_0016:
+	{
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+IL2CPP_EXTERN_C  bool PlayableOutput_Equals_m458689DD056559A7460CCE496BF6BEC45EB47C5B_AdjustorThunk (RuntimeObject * __this, PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345  ___other0, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 * _thisAdjusted = reinterpret_cast<PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345 *>(__this + _offset);
+	return PlayableOutput_Equals_m458689DD056559A7460CCE496BF6BEC45EB47C5B(_thisAdjusted, ___other0, method);
+}
+// System.Void UnityEngine.Playables.PlayableOutput::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableOutput__cctor_m833F06DD46347C62096CEF4E22DBC3EB9ECDACD5 (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayableOutput__cctor_m833F06DD46347C62096CEF4E22DBC3EB9ECDACD5_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922_il2cpp_TypeInfo_var);
+		PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  L_0 = PlayableOutputHandle_get_Null_mA462EF24F3B0CDD5B3C3F0C57073D49CED316FA4(/*hidden argument*/NULL);
+		PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345  L_1;
+		memset((&L_1), 0, sizeof(L_1));
+		PlayableOutput__ctor_m881EC9E4BAD358971373EE1D6BF9C37DDB7A4943((&L_1), L_0, /*hidden argument*/NULL);
+		((PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345_StaticFields*)il2cpp_codegen_static_fields_for(PlayableOutput_t5E024C3D28C983782CD4FDB2FA5AD23998D21345_il2cpp_TypeInfo_var))->set_m_NullPlayableOutput_1(L_1);
+		return;
+	}
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
