@@ -183,7 +183,7 @@ bool Sprite::initWithFile(const std::string& filename)
         rect.size = texture->getContentSize();
         return initWithTexture(texture, rect);
     }
-
+    printf("Sprite::initWithFile失败\n");
     // don't release here.
     // when load texture failed, it's better to get a "transparent" sprite then a crashed program
     // this->release();
@@ -195,6 +195,7 @@ bool Sprite::initWithFile(const std::string &filename, const Rect& rect)
     CCASSERT(!filename.empty(), "Invalid filename");
     if (filename.empty())
     {
+        printf("Sprite::initWithFile失败\n");
         return false;
     }
 
@@ -206,7 +207,7 @@ bool Sprite::initWithFile(const std::string &filename, const Rect& rect)
     {
         return initWithTexture(texture, rect);
     }
-
+    printf("Sprite::initWithFile失败\n");
     // don't release here.
     // when load texture failed, it's better to get a "transparent" sprite then a crashed program
     // this->release();

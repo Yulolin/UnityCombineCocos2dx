@@ -34,7 +34,7 @@ void sendTouchBackToUnity(uint64_t touchTimeID, char flag){
 
 void sendTouchToCocos_Begin(NSSet* touches, UIEvent* event, CGFloat scaleFactor){
     // 清理一次touch缓存
-    [[TouchCacheManager sharedManager] clearCache];
+//    [[TouchCacheManager sharedManager] clearCache];
     
     NSArray* touchesArray = [touches allObjects];  // 转成 NSArray
     // 获取时间id，存入Touch缓存

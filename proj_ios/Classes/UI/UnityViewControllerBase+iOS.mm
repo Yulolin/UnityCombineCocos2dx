@@ -10,7 +10,6 @@
 #include "UnityAppController.h"
 #include "UnityAppController+ViewHandling.h"
 #include "Unity/ObjCRuntime.h"
-#import "Cocos2dxPlugin_m.h"
 
 // when returning from presenting UIViewController we might need to update app orientation to "correct" one, as we wont get rotation notification
 @interface UnityAppController ()
@@ -115,10 +114,7 @@ ScreenOrientation _currentOrientation;
         }];
     }
     [super viewWillTransitionToSize: size withTransitionCoordinator: coordinator];
-    
-    // 设置Cocos的窗口大小
-    crp::setScreenSize([UIScreen mainScreen].bounds.size.height * [UIScreen mainScreen].scale,
-                       [UIScreen mainScreen].bounds.size.width * [UIScreen mainScreen].scale);
+
 }
 
 @end
